@@ -1,0 +1,335 @@
+/*  *是通配符  */
+*{
+	/*margin:边缘*/
+	margin: 3px;
+	/*padding:填补*/
+	padding: 0px;
+}
+figure{
+	position: relative;
+	width: 32%;
+	height: 500px;
+	float: left;
+	/*超出部分隐藏*/
+	overflow: hidden;
+}
+figure img{
+	/*动画*/
+	transition: all 0.3s;
+	
+}
+/*悬停*/
+figure:hover img{
+	/*透明度0--1*/
+	opacity: 0.5;
+}
+.view1:hover img{
+	transform: translateX(50px);
+}
+h2{
+	transition: all 2s;
+}
+/*图一的动画*/
+.view1 h2{
+	position: absolute;
+	left: 50px;
+	top: 60px;
+	color: white;
+}
+.view1:hover h2{
+	transform: translate(50px);
+}
+.p{
+	position: absolute;
+	width: 200px;
+	left: 100px;
+	/*background-color: skyblue;*/
+	transition: all 1s;
+}
+/*p1的起始位置*/
+.p1{
+	bottom: 35px;
+	transform: translateY(500px);
+	
+}
+/*从下自动到上*/
+.view1:hover .p1{
+	transform: translateY(-200px);
+}
+.p2{
+	top: 300px;
+	transform: translateX(500px);
+}
+/*从右移动到左*/
+.view1:hover .p2{
+	transform: translateX(0px);
+}
+.p3{
+	top: 350px;
+	transform: translateX(-250px);
+}
+.view1:hover .p3{
+	transform: translateX(0px);
+}
+/*第二张图*/
+.view2 h2{
+	position: absolute;
+	left: 20px;
+	top: 60px;
+	color: white;
+}
+.view2:hover img{
+	transform: translateX(-20px);
+}
+.info{
+	position: absolute;
+	left: 20px;
+	background-color: white;
+	width: 120px;
+	transform: translateX(-300px);
+}
+.info1{
+	top: 300px;
+	transition: all 0.6s;
+}
+.view2:hover .info1{
+	transform: translateX(0px);
+}
+.info2{
+	top: 350px;
+	transition: all 0.8s;
+}
+.view2:hover .info2{
+	transform: translateX(0px);
+}
+.info3{
+	top: 400px;
+	transition: all 1s;
+}
+.view2:hover .info3{
+	transform: translateX(0px);
+}
+/*第三张图*/
+.view3:hover img{
+ 	transform: translateY(-20px);
+ 	opacity: 0.3;
+ }
+.view3 h2{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	color: white;
+	transform: translateY(-200px);
+	/*h2刚开始定义了延迟*/
+	/*transition: all 5s;*/
+	
+}
+.view3:hover h2{
+	transform: translateY(0px);
+}
+.g{
+	position: absolute;
+	left: 130px;
+	/*bottom: 0px;*/
+	width: 200px;
+	opacity: 0;
+	transition: all 2s;
+}
+.g1{
+	bottom: 80px;
+	transform: translateY(400px);
+	opacity: 1;
+
+}
+.g2{
+	bottom: 55px;
+	transform: translateY(400px);
+    opacity: 1;
+
+}
+.g3{
+	bottom: 30px;
+	transform: translateY(400px);
+	opacity: 1;
+
+}
+.g4{
+	bottom: 5px;
+	transform: translateY(400px);
+	opacity: 1;
+
+}
+.g5{
+	bottom: -20px;
+	transform: translateY(400px);
+	opacity: 1;
+}
+.g6{
+	bottom: -45px;
+	transform: translateY(400px);
+	opacity: 1;
+}
+.view3:hover .g{
+	transform: translateY(-200px);
+	opacity: 1;
+		/*opacity: 1;*/
+}
+/*.view3:hover p{
+	transform: translateY(-100px);
+	/*透明度*/
+	/*opacity: 1;*/
+
+/*第四张图*/
+.view4 h2{
+	position: absolute;
+	left: 20px;
+	top: 60px;
+	color: white;
+	transform: translateY(50px);
+	opacity: 0;
+}
+.view4:hover h2{
+	transform: translateY(0px);
+	opacity: 1;
+}
+.box{
+	position: absolute;
+	left: 0px;
+	bottom: -305px;
+	width: 150%;
+	height: 300px;
+	background-color: white;
+	/*设置左上角旋转基准角*/
+	transform-origin: 0% 0%;
+	transition: all 2s;
+}
+.view4:hover .box{
+	transform: rotate(-20deg);
+}
+.view4 p{
+	position: absolute;
+	right: 15px;
+	bottom: 70px;
+	transform: translateY(100px);
+	/*层级关系*/
+	z-index: 99;
+	transition: all 2s;
+}
+.view4:hover p{
+	transform: translateY(0px);
+}
+/*第五张图*/
+.view5:hover img{
+	opacity: 0.3;
+}
+.view5 h2{
+	position: absolute;
+	top: 60px;
+	left: 50px;
+	color: white;
+	transform: translateY(-200px);
+}
+.view5:hover h2{
+	transform: translateY(0px);
+}
+.view5 p{
+	position: absolute;
+	width: 70%;
+	bottom: 0px;
+	/*right: 10%;*/
+	left: 90px;
+	opacity: 0;
+	transition: all 2s;
+}
+.view5:hover p{
+	transform: translateY(-100px);
+	opacity: 1;
+}
+.box2{
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	width: 80%;
+	height: 80%;
+	border: 3px solid black;
+	transform: translateY(-500px) rotate(0deg);
+	transform-origin: 0% 0%;
+	transition: all 2s;
+}
+.view5:hover .box2{
+	/**/
+	transform: translateY(0px) rotate(360deg);
+}
+/*第六图*/
+.view6 h2{
+	position: absolute;
+	left: 10%;
+	top: 60%;
+	
+}
+.view6:hover h2{
+	transform: rotate(360deg);
+}
+.view6:hover img{
+	transform: scale(1.5);
+}
+.view7:hover img{
+	transform: scale(0.9);
+}
+.view8:hover img{
+	opacity: 0.3;
+}
+.view8 h2{
+	position: absolute;
+	left: 65px;
+	top: 65px;
+	color: white;
+	transform: translateY(-200px)rotate(0deg);
+	/*transform-origin: 0% 0%;*/
+}
+.view8:hover h2{
+	transform: translateY(0px)rotate(360deg);
+
+}
+.view8 p{
+	position: absolute;
+	right: 100px;
+	bottom: 100px;
+	transform: translateY(500px);
+	transition: all 2s;
+}
+.view8:hover p{
+	transform: translateY(0px);
+}
+.top{
+	position: absolute;
+	left: 30px;
+	top: 50px;
+	width: 0px;
+	height: 300px;
+	border-top: 2px solid white;
+	/*border-bottom: 2px solid white;*/
+	transition: all 3s;
+}
+.view8:hover .top{
+	width: 300px;
+}
+.left{
+	position: absolute;
+	width: 300px;
+	left: 50px;
+	height: 0px;
+	top: 30px;
+	border-left: 2px solid white;
+	/*border-right: 2px solid white;*/
+	transition: all 3s;
+}
+.view8:hover .left{
+	height: 300px;
+}
+.view9 img{
+	transition: all 2s;
+}
+.view9:hover img{
+	transform: rotate(360deg);
+}
